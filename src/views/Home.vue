@@ -1,18 +1,22 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <h1>Home page</h1>
+    <div v-for="videoId in allVideosIds" :key="videoId">
+      <ShowVideo :showVideoId="videoId" />
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import { mapState } from "vuex";
+import ShowVideo from "../components/ShowVideo.vue";
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
+  name: "Home",
+  components: { ShowVideo },
+  computed: {
+    ...mapState(["allVideosIds"]),
+  },
+};
 </script>
+
+<style></style>
