@@ -1,9 +1,6 @@
 <template>
-  <div>
-    <h1>Home page</h1>
-    <div v-for="videoId in allVideosIds" :key="videoId">
-      <ShowVideo :showVideoId="videoId" />
-    </div>
+  <div v-for="videoId in allVideosIds" :key="videoId">
+    <ShowVideo :showVideoId="videoId" />
   </div>
 </template>
 
