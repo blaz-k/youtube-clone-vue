@@ -152,7 +152,7 @@
           </div>
         </div>
 
-        <div class="row row-cols-1 row-cols-lg-4 g-4">
+        <div class="">
           <!---------here comes content---->
           <router-view />
         </div>

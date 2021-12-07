@@ -1,6 +1,8 @@
 <template>
-  <div v-for="videoId in allVideosIds" :key="videoId">
-    <ShowVideo :showVideoId="videoId" />
+  <div class="row g-4 row-cols-1 row-cols-sm-4">
+    <div v-for="videoId in allVideosIds" :key="videoId">
+      <ShowVideo :showVideoId="videoId" />
+    </div>
   </div>
 </template>
 
