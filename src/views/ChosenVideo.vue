@@ -1,5 +1,5 @@
 <template>
-  <div class="row g-4 row-cols-sm-1">
+  <div class="row g-4 row-cols-sm-1" v-if="videoData">
     <div class="row container">
       <div class="col-md-8">
         <div class="card-img mb-3">
@@ -26,7 +26,7 @@
       </div>
       <div class="col-md-4">
         <div class="card mb-3">
-          <SidebarVideo />
+          <SidebarVideo class="animate__animated animate__lightSpeedInLeft" />
         </div>
       </div>
     </div>

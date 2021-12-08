@@ -1,3 +1,4 @@
+import axios from "axios";
 import { createStore } from "vuex";
 
 export default createStore({
@@ -16,9 +17,35 @@ export default createStore({
       "DPBXxrhJIv4",
       "9wKivv-vvhU",
     ],
+
+    url: "https://www.googleapis.com/youtube/v3/videos?id=",
+    apiKey: "AIzaSyCrq46vpCpa50Z4t-GQ_GNuqZHIeyZWg14",
+    endUrl: "&part=snippet,contentDetails,statistics,status",
+    videoData: null,
   },
 
-  mutations: {},
-  actions: {},
+  mutations: {
+    setVideoData(state, videoData) {
+      state.videoData = videoData;
+    },
+  },
+  actions: {
+    async fetchVideoData({ commit, state }, vId) {
+      // context = {state, commit}
+      console.log(state.url);
+      console.log(vId);
+
+      let res = await axios.get(
+        `${state.url}${vId}&key=${state.apiKey}${state.endUrl}`
+      );
+      console.log(res);
+      commit("setVideoData", res);
+    },
+  },
+  getters: {
+    getVideoData(state) {
+      return state.videoData;
+    },
+  },
   modules: {},
 });
