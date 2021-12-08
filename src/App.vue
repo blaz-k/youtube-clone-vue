@@ -1,10 +1,10 @@
 <template>
-  <div id="nav">
+  <!-- <div id="nav">
     <router-link :to="{ name: 'Home' }">Home</router-link> |
     <router-link :to="{ name: 'About' }">About</router-link>
-  </div>
+  </div> -->
   <header
-    class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"
+    class="navbar navbar-dark sticky-top myMenu flex-md-nowrap p-2 shadow search"
   >
     <router-link
       class="navbar-brand col-md-3 col-lg-2 me-0 px-3"
@@ -12,7 +12,7 @@
       >YouTubeCloneVue</router-link
     >
     <button
-      class="navbar-toggler position-absolute d-md-none collapsed"
+      class="navbar-toggler position-absolute d-md-none collapsed mb-4"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#sidebarMenu"
@@ -23,7 +23,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <input
-      class="form-control form-control-dark w-100"
+      class="form-control form-control-dark w-100 bla"
       type="text"
       placeholder="Search"
       aria-label="Search"
@@ -39,7 +39,7 @@
     <div class="row">
       <nav
         id="sidebarMenu"
-        class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"
+        class="col-md-3 col-lg-2 d-md-block myMenu sidebar collapse"
       >
         <div class="position-sticky pt-3">
           <ul class="nav flex-column">
@@ -53,7 +53,9 @@
             </li>
 
             <li class="nav-item">
-              <router-link to="/" class="nav-link">Video</router-link>
+              <router-link :to="{ name: 'About' }" class="nav-link"
+                >About</router-link
+              >
             </li>
 
             <li class="nav-item">
@@ -128,7 +130,7 @@
         </div>
       </nav>
 
-      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 main-change">
         <div
           class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
         >
@@ -152,7 +154,7 @@
           </div>
         </div>
 
-        <div class="">
+        <div class="content-style">
           <!---------here comes content---->
           <router-view />
         </div>
@@ -170,10 +172,14 @@
   color: #2c3e50;
 }
 
-#links {
-  /* Za urediti kasneje */
-}
+.homeSpan {
+  color: #aaaa;
 
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 24px;
+}
 #links a.router-link-exact-active {
   color: #42b983;
 }
@@ -189,5 +195,16 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.search {
+  display: flex;
+  justify-content: space-around;
+
+  background-color: #4e4e4e;
+}
+
+.bla {
+  margin-top: 3rem;
 }
 </style>

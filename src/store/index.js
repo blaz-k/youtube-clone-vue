@@ -32,13 +32,10 @@ export default createStore({
   actions: {
     async fetchVideoData({ commit, state }, vId) {
       // context = {state, commit}
-      console.log(state.url);
-      console.log(vId);
 
       let res = await axios.get(
         `${state.url}${vId}&key=${state.apiKey}${state.endUrl}`
       );
-      console.log(res);
       commit("setVideoData", res);
     },
   },

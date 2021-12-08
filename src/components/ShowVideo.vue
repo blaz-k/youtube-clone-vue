@@ -1,21 +1,26 @@
 <template>
-  <div v-if="videoData" id="showVideo">
+  <div v-if="videoData" id="showVideo" class="ble1">
     <router-link
       :to="{ name: 'ChosenVideo', params: { detailsId: this.showVideoId } }"
+      class="ble2"
     >
-      <div class="card" style="">
-        <div class="card h-100">
-          <img
-            :src="videoData.items[0].snippet.thumbnails.maxres.url"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">{{ videoData.items[0].snippet.title }}</h5>
-            <p class="card-text">
-              <span class="cardName"> <div>imepriimek</div> </span>
-              <span>{{ correctData }}</span>
-            </p>
+      <div class="my-card ble3">
+        <div class="card ble" style="">
+          <div class="card h-100">
+            <img
+              :src="videoData.items[0].snippet.thumbnails.maxres.url"
+              class="card-img-top my-img"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">{{ videoData.items[0].snippet.title }}</h5>
+              <p class="card-text">
+                <span class="cardName">
+                  <p>{{ videoData.items[0].statistics.viewCount }} Views</p>
+                  <p>{{ correctData }}</p></span
+                >
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -61,11 +66,68 @@ export default {
 </script>
 
 <style>
+.main-change {
+  background-color: black;
+}
+
+.myMenu {
+  background-color: #4e4e4e;
+}
+
+.nav-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  /* White-Color */
+
+  color: #ffffff;
+}
+#showVideo {
+  margin: 0.2rem;
+}
+
+#showVideo .card-body {
+  background-color: black;
+}
 #showVideo .cardName {
-  color: red;
+  display: flex;
+  justify-content: space-between;
+  color: #aaaaaa;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
 }
 
 #showVideo .card-title {
-  color: green;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+
+  /* White-Color */
+
+  color: #ffffff;
+}
+
+.my-card {
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(247, 3, 3, 0.13);
+  transition: 0.2s;
+  cursor: context-menu;
+}
+
+.my-card:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(8, 238, 27, 0.877);
+}
+
+.my-img {
 }
 </style>
