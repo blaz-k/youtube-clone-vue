@@ -1,8 +1,4 @@
 <template>
-  <!-- <div id="nav">
-    <router-link :to="{ name: 'Home' }">Home</router-link> |
-    <router-link :to="{ name: 'About' }">About</router-link>
-  </div> -->
   <header
     class="navbar navbar-dark sticky-top myMenu flex-md-nowrap p-2 shadow search"
   >
@@ -180,6 +176,23 @@
   align-items: flex-start;
   padding: 8px 24px;
 }
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar .navbar-toggler {
+  top: 0.25rem;
+  right: 1rem;
+}
 #links a.router-link-exact-active {
   color: #42b983;
 }
@@ -195,16 +208,5 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
-}
-
-.search {
-  display: flex;
-  justify-content: space-around;
-
-  background-color: #4e4e4e;
-}
-
-.bla {
-  margin-top: 3rem;
 }
 </style>
