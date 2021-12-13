@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h3>sidebar video</h3>
     <div :key="sidebarVideo" v-for="sidebarVideo in allVideosIds">
       <ShowVideo :showVideoId="sidebarVideo" />
     </div>
@@ -10,6 +9,8 @@
 <script>
 import { mapState } from "vuex";
 import ShowVideo from "./ShowVideo.vue";
+//import NewShowVideo from "./NewShowVideo.vue";
+
 export default {
   name: "SidebarVideo",
   components: { ShowVideo },

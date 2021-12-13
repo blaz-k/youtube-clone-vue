@@ -1,11 +1,10 @@
 <template>
-  <div v-if="videoData" id="showVideo" class="ble1">
+  <div v-if="videoData" id="showVideo">
     <router-link
       :to="{ name: 'ChosenVideo', params: { detailsId: this.showVideoId } }"
-      class="ble2"
     >
-      <div class="my-card ble3">
-        <div class="card ble" style="">
+      <div class="my-card">
+        <div class="card" style="">
           <div class="card h-100">
             <img
               :src="videoData.items[0].snippet.thumbnails.maxres.url"
@@ -126,8 +125,5 @@ export default {
 .my-card:hover {
   transform: translateY(-0.5%);
   box-shadow: 0 4rem 8rem rgba(8, 238, 27, 0.877);
-}
-
-.my-img {
 }
 </style>

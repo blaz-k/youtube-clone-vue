@@ -193,6 +193,11 @@
   top: 0.25rem;
   right: 1rem;
 }
+
+a:link {
+  text-decoration: none;
+}
+
 #links a.router-link-exact-active {
   color: #42b983;
 }
