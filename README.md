@@ -12,7 +12,7 @@ Tech and concepts that I used:
 - Vuex
 - Vue-router
 
-![](src/assets/youtubeClone.png)
+![](src/assets/yt-vue.png)
 
 ## Project setup
 
