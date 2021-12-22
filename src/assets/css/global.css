@@ -1,6 +1,6 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  /* SIDEBAR VIDEOS */
+  /* SIDEBAR VIDEOS ( ShowVideo )*/
   #sidebar {
     background-color: rgb(0, 0, 0);
   }
@@ -26,10 +26,33 @@
   #sidebar .bottom {
     margin-bottom: 5rem;
   }
+
+  /* SHOW VIDEOS (Home, ChosenVideo) */
+
+  #showVideo .card-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 14px;
+
+    color: #ffffff;
+  }
+  #showVideo .cardName {
+    display: flex;
+    justify-content: space-between;
+    color: #aaaaaa;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 3rem;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 574px) {
   /* SIDEBAR VIDEOS */
   #sidebar {
     background-color: rgb(0, 0, 0);
@@ -56,6 +79,29 @@
 
   #sidebar .bottom {
     margin-bottom: 5rem;
+  }
+
+  /* SHOW VIDEOS (Home, ChosenVideo) */
+
+  #showVideo .card-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 10px;
+
+    color: #ffffff;
+  }
+  #showVideo .cardName {
+    display: flex;
+    justify-content: space-between;
+    color: #aaaaaa;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 6px;
+    margin-top: 3rem;
   }
 }
 
@@ -87,6 +133,29 @@
   #sidebar .bottom {
     margin-bottom: 5rem;
   }
+
+  /* SHOW VIDEOS (Home, ChosenVideo) */
+
+  #showVideo .card-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 10px;
+
+    color: #ffffff;
+  }
+  #showVideo .cardName {
+    display: flex;
+    justify-content: space-between;
+    color: #aaaaaa;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 6px;
+    margin-top: 2rem;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -117,9 +186,32 @@
   #sidebar .bottom {
     margin-bottom: 5rem;
   }
+
+  /* SHOW VIDEOS (Home, ChosenVideo) */
+
+  #showVideo .card-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 14px;
+
+    color: #ffffff;
+  }
+  #showVideo .cardName {
+    display: flex;
+    justify-content: space-between;
+    color: #aaaaaa;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 10px;
+    margin-top: 2rem;
+  }
 }
 
-/* Large devices (large laptops and desktops, 1150px and up) */
+/* Large devices (large laptops and desktops, 1250px and up) */
 @media only screen and (min-width: 1250px) {
   /* SIDEBAR VIDEOS */
   #sidebar {
@@ -148,6 +240,29 @@
 
   #sidebar .bottom {
     margin-bottom: 5rem;
+  }
+
+  /* SHOW VIDEOS (Home, ChosenVideo) */
+
+  #showVideo .card-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #ffffff;
+  }
+  #showVideo .cardName {
+    display: flex;
+    justify-content: space-between;
+    color: #aaaaaa;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 3rem;
   }
 }
 

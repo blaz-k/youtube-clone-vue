@@ -130,8 +130,6 @@ export default {
   font-size: 14px;
   line-height: 16px;
 
-  /* White-Color */
-
   color: #ffffff;
 }
 #showVideo {
@@ -158,8 +156,6 @@ export default {
   font-weight: bold;
   font-size: 12px;
   line-height: 14px;
-
-  /* White-Color */
 
   color: #ffffff;
 }
