@@ -130,7 +130,7 @@
         <div
           class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
         >
-          <h1 class="h2">Dashboard</h1>
+          <h1 class="h2 yt">YoutubeClone</h1>
           <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group me-2">
               <button type="button" class="btn btn-sm btn-outline-secondary">
@@ -194,14 +194,6 @@
   right: 1rem;
 }
 
-a:link {
-  text-decoration: none;
-}
-
-#links a.router-link-exact-active {
-  color: #42b983;
-}
-
 #nav {
   padding: 30px;
 }
@@ -211,7 +203,21 @@ a:link {
   color: #2c3e50;
 }
 
-#nav a.router-link-exact-active {
+a:link {
+  text-decoration: none;
+  transition: all 0.8s ease-out;
+}
+
+a:hover,
+a:focus {
+  background-color: #5b7067;
+}
+
+#links a.router-link-exact-active {
   color: #42b983;
+}
+
+.yt {
+  color: white;
 }
 </style>

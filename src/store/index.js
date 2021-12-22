@@ -9,7 +9,7 @@ export default createStore({
       "kft2AkvKhWU",
       "TNzgUCU5TVs",
       "HHs1ftjayUw",
-      "O5HY_TRov2c&t=2s",
+      "O5HY_TRov2c",
       "LrNkecdU6mI",
       "VXKBaVGWSk0",
       "MHpHPj-DosY",
@@ -17,7 +17,6 @@ export default createStore({
       "FZ0YtjgO0DQ",
       "9wKivv-vvhU",
     ],
-
     url: "https://www.googleapis.com/youtube/v3/videos?id=",
     apiKey: "AIzaSyCrq46vpCpa50Z4t-GQ_GNuqZHIeyZWg14",
     endUrl: "&part=snippet,contentDetails,statistics,status",

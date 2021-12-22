@@ -1,5 +1,5 @@
 <template>
-  <div>About</div>
+  <h2>About</h2>
   <p>
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus quo
     debitis obcaecati dicta dolores commodi quod aliquid quasi ipsum incidunt
@@ -70,4 +70,12 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+h2 {
+  margin-bottom: 2rem;
+  color: #fff;
+}
+p {
+  color: rgb(255, 0, 0);
+}
+</style>
