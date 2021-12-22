@@ -7,7 +7,7 @@
             <iframe
               width="100%"
               height="450vh"
-              :src="this.embedUrl + this.detailsId"
+              :src="embedUrl + detailsId"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -15,7 +15,9 @@
             ></iframe>
 
             <div class="card-body">
-              <h5 class="card-title">{{ videoData.items[0].snippet.title }}</h5>
+              <h5 class="card-title">
+                {{ videoData.items[0].snippet.title }} plus {{ this.detailsId }}
+              </h5>
               <p class="card-text">
                 {{ videoData.items[0].snippet.description.substring(0, 150) }}
               </p>
@@ -57,9 +59,17 @@ export default {
   computed: {
     ...mapState(["allVideosIds"]),
   },
-
   created() {
     this.videoDetail();
+  },
+  watch: {
+    //newValue is new value already defined, and oldValue is an old one
+    detailsId(newValue, oldValue) {
+      this.videoDetail();
+    },
+  },
+  mounted() {
+    console.log("mounted cycle");
   },
   data() {
     return {

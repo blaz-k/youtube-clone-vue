@@ -16,22 +16,14 @@ import ShowVideo from "../components/ShowVideo.vue";
 export default {
   name: "Home",
   components: { ShowVideo },
-  created() {
-    let videoId = "HHs1ftjayUw";
-    this.fetchVideoData(videoId);
-  },
   computed: {
     ...mapState(["allVideosIds", "videoData"]),
-    ...mapGetters(["getVideoData"]),
-  },
-  methods: {
-    ...mapActions(["fetchVideoData"]),
   },
 };
 </script>
 
 <style>
 .a {
-  color: red;
+  color: rgb(60, 255, 0);
 }
 </style>
