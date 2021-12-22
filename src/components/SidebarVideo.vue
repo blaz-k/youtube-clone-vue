@@ -1,7 +1,7 @@
 <template>
   <div>
     <div :key="sidebarVideo" v-for="sidebarVideo in allVideosIds">
-      <ShowVideo :showVideoId="sidebarVideo" />
+      <ShowVideo :showVideoId="sidebarVideo" :sidebar="true" />
     </div>
   </div>
 </template>

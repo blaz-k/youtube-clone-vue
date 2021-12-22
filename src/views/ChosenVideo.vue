@@ -3,7 +3,7 @@
     <div class="row g-4 row-cols-sm-1 mt-4" v-if="videoData">
       <div class="row">
         <div class="col-md-8">
-          <div class="card-img mb-3">
+          <div class="card-img mb-3 animate__animated animate__fadeInTopLeft">
             <iframe
               width="100%"
               height="450vh"
@@ -19,7 +19,7 @@
                 {{ videoData.items[0].snippet.title }} plus {{ this.detailsId }}
               </h5>
               <p class="card-text">
-                {{ videoData.items[0].snippet.description.substring(0, 150) }}
+                {{ videoData.items[0].snippet.description.substring(0, 250) }}
               </p>
               <div class="card-text details">
                 <p>{{ videoData.items[0].statistics.viewCount }} Views</p>
@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card mb-3">
+          <div class="card border-0 mb-3">
             <SidebarVideo class="animate__animated animate__lightSpeedInLeft" />
           </div>
         </div>
