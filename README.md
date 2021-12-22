@@ -1,4 +1,4 @@
-# Youtube-clone-vue
+# Youtube-clone website
 
 ## Clone of youtube page, made with vue.js
 
