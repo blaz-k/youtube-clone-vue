@@ -1,0 +1,183 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* SIDEBAR VIDEOS */
+  #sidebar {
+    background-color: rgb(0, 0, 0);
+  }
+
+  #sidebar .card-text {
+    background-color: rgb(0, 0, 0);
+    font-size: 12px;
+  }
+
+  #sidebar .cardName {
+    display: flex;
+    justify-content: space-between;
+  }
+  #sidebar .card-body {
+    background-color: rgb(0, 0, 0);
+  }
+
+  #sidebar .card-body .card-title {
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+  #sidebar .bottom {
+    margin-bottom: 5rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* SIDEBAR VIDEOS */
+  #sidebar {
+    background-color: rgb(0, 0, 0);
+  }
+
+  #sidebar .card-text {
+    background-color: rgb(0, 0, 0);
+    font-size: 19px;
+  }
+
+  #sidebar .cardName {
+    display: flex;
+    justify-content: space-between;
+  }
+  #sidebar .card-body {
+    background-color: rgb(0, 0, 0);
+  }
+
+  #sidebar .card-body .card-title {
+    margin-top: -1rem;
+    font-size: 26px;
+    font-weight: 100;
+  }
+
+  #sidebar .bottom {
+    margin-bottom: 5rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* SIDEBAR VIDEOS */
+  #sidebar {
+    background-color: rgb(0, 0, 0);
+  }
+
+  #sidebar .card-text {
+    background-color: rgb(0, 0, 0);
+    font-size: 12px;
+  }
+
+  #sidebar .cardName {
+    display: flex;
+    justify-content: space-between;
+  }
+  #sidebar .card-body {
+    background-color: rgb(0, 0, 0);
+  }
+
+  #sidebar .card-body .card-title {
+    margin-top: -1.5rem;
+    font-size: 19px;
+    font-weight: 100;
+  }
+
+  #sidebar .bottom {
+    margin-bottom: 5rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* SIDEBAR VIDEOS */
+  #sidebar {
+    background-color: rgb(0, 0, 0);
+  }
+
+  #sidebar .card-text {
+    background-color: rgb(0, 0, 0);
+    font-size: 9px;
+  }
+
+  #sidebar .cardName {
+    display: flex;
+    justify-content: space-between;
+  }
+  #sidebar .card-body {
+    background-color: rgb(0, 0, 0);
+  }
+
+  #sidebar .card-body .card-title {
+    margin-top: -1.5rem;
+    font-size: 15px;
+    font-weight: 100;
+  }
+
+  #sidebar .bottom {
+    margin-bottom: 5rem;
+  }
+}
+
+/* Large devices (large laptops and desktops, 1150px and up) */
+@media only screen and (min-width: 1150px) {
+  /* SIDEBAR VIDEOS */
+  #sidebar {
+    background-color: rgb(0, 0, 0);
+  }
+
+  #sidebar .card-text {
+    background-color: rgb(0, 0, 0);
+    font-size: 11px;
+  }
+
+  #sidebar .cardName {
+    display: flex;
+    justify-content: space-between;
+  }
+  #sidebar .card-body {
+    background-color: rgb(0, 0, 0);
+  }
+
+  #sidebar .card-body .card-title {
+    margin-top: 0.25rem;
+    font-size: 20px;
+    font-weight: 100;
+  }
+
+  #sidebar .bottom {
+    margin-bottom: 5rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1650px and up) */
+@media only screen and (min-width: 1620px) {
+  /* SIDEBAR VIDEOS */
+  #sidebar {
+    background-color: rgb(0, 0, 0);
+  }
+
+  #sidebar .card-text {
+    background-color: rgb(0, 0, 0);
+    font-size: 15px;
+  }
+
+  #sidebar .cardName {
+    display: flex;
+    justify-content: space-between;
+  }
+  #sidebar .card-body {
+    background-color: rgb(0, 0, 0);
+  }
+
+  #sidebar .card-body .card-title {
+    font-size: 25px;
+    font-weight: 100;
+  }
+
+  #sidebar .bottom {
+    margin-bottom: 5rem;
+  }
+}
