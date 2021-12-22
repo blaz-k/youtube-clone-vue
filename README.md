@@ -2,6 +2,8 @@
 
 ## Clone of youtube page, made with vue.js
 
+Link to website: [ https://blaz-k.github.io/youtube-clone-vue/](https://blaz-k.github.io/youtube-clone-vue/)
+
 Tech and concepts that I used:
 
 - HTML
