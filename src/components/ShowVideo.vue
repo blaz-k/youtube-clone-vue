@@ -23,35 +23,9 @@
               <div class="card-title">
                 {{ videoData.items[0].snippet.title.substring(0, 45) }}
               </div>
-              <p class="card-text"></p>
-              <!-- <p class="card-text">
-                <small class="text-muted"
-                  ><p>{{ videoData.items[0].statistics.viewCount }} Views</p>
-                  <p>{{ correctData }}</p></small
-                >
-              </p> -->
             </div>
           </div>
         </div>
-
-        <!-- <div class="card" style="">
-          <div class="card h-100">
-            <img
-              :src="videoData.items[0].snippet.thumbnails.maxres.url"
-              class="card-img-top my-img"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">{{ videoData.items[0].snippet.title }}</h5>
-              <p class="card-text">
-                <span class="cardName">
-                  <p>{{ videoData.items[0].statistics.viewCount }} Views</p>
-                  <p>{{ correctData }}</p></span
-                >
-              </p>
-            </div>
-          </div>
-        </div> -->
       </div>
 
       <div v-else id="showVideo">
@@ -125,7 +99,7 @@ export default {
   border: none;
 }
 /* SIDEBAR VIDEOS */
-#sidebar {
+/* #sidebar {
   background-color: rgb(143, 134, 5);
 }
 
@@ -137,7 +111,7 @@ export default {
 #sidebar .card-body .card-title {
   font-size: 14px;
   font-weight: 100;
-}
+} */
 
 /* do tukaj */
 

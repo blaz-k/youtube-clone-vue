@@ -11,6 +11,8 @@ Tech and concepts that I used:
 - Animate css
 - Vuex
 - Vue-router
+- Media Queries
+- REST API
 
 ![](src/assets/yt-vue.png)
 
