@@ -98,22 +98,6 @@ export default {
 .row {
   border: none;
 }
-/* SIDEBAR VIDEOS */
-/* #sidebar {
-  background-color: rgb(143, 134, 5);
-}
-
-#sidebar .card-body {
-  background-color: cadetblue;
-  font-size: 15px;
-}
-
-#sidebar .card-body .card-title {
-  font-size: 14px;
-  font-weight: 100;
-} */
-
-/* do tukaj */
 
 .main-change {
   background-color: black;
